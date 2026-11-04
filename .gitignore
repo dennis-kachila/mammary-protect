@@ -7,3 +7,7 @@ Thumbs.db
 __pycache__/
 .pytest_cache/
 node_modules/
+*.kicad_prl
+*.kicad_sch-bak
+*-backups/
+~*.lck

@@ -1,0 +1,4 @@
+"Refs","Value","Footprint","Qty","DNP"
+"C1","10n","Capacitor_SMD:C_0603_1608Metric","1",""
+"J1","TO_TEMPERATURE_HUB","","1",""
+"U1","TMP102xxDRL","Package_TO_SOT_SMD:SOT-563","1",""

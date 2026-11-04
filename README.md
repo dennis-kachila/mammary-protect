@@ -14,7 +14,7 @@ The image above is a screenshot from an earlier CAD iteration; inspect the nativ
 | [Meshes](cad/mesh/) | Earlier STL and 3MF patch and enclosure iterations | Historical prototypes |
 | [OpenSCAD](cad/openscad/) | Parametric honeycomb patch exploration | Early concept |
 | [Images](images/) | CAD iteration screenshots and visual studies of the patch and straps | Visual references, not manufacturing drawings |
-| [Electronics](electronics/README.md) | Proposed sensing and processing architecture | Planning stage; no verified schematic or PCB source yet |
+| [Electronics](electronics/README.md) | First-pass KiCad contact-temperature schematics and ultrasound reference plan | Schematic prototype; no PCB or verified ultrasound interface yet |
 | [Design notes](docs/) | CAD inventory, probe dimensions, prototype materials, and project status | Working notes |
 
 The latest exported patch is [almost-final-patch-v16.f3d](cad/fusion/almost-final-patch-v16.f3d). Its associated STEP file is in the same folder. The probe holder is [probe-design-holder-v5.f3d](cad/fusion/probe-design-holder-v5.f3d). See the [CAD inventory](docs/cad-inventory.md) before treating any model as fabrication ready.

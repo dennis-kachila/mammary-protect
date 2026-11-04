@@ -5,3 +5,7 @@
 *.step -text
 *.scad text eol=lf
 *.md text eol=lf
+*.kicad_sch text eol=lf
+*.net text eol=lf
+*.py text eol=lf
+*.csv text eol=lf
