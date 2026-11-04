@@ -1,6 +1,8 @@
 # KiCad temperature-sensing prototype
 
-Open `temperature-hub.kicad_sch` or `temperature-node.kicad_sch` in KiCad 10's Schematic Editor. These are the editable schematic sources; PDF files and PNG previews are included for quick review. A PCB project has not been created yet. `generate.py` records how the initial schematics were constructed from KiCad's installed standard symbol libraries.
+Open `temperature-hub.kicad_sch`, `temperature-node.kicad_sch`, or `probe-interface.kicad_sch` in KiCad 10's Schematic Editor. These are the editable schematic sources; PDF files and PNG previews are included for quick review. A PCB project has not been created yet. `generate.py` records how the initial schematics were constructed from KiCad's installed standard symbol libraries.
+
+The `probe-interface` sheet records the GM100 probe's two separate coaxial paths. Its lead A and lead B labels are placeholders: neither the photograph nor the available manual identifies which pictured connector carries TX. See the [probe reference](../../docs/gm100-probe-reference.md) before assigning either lead to electronics.
 
 ## Proposed wiring
 

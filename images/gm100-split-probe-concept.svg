@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title description">
+  <title id="title">GM100 split-probe connection concept</title>
+  <desc id="description">A five megahertz dual-element probe has two separate coaxial leads, A and B. The assignment of those leads to transmit and receive is not known from the product photograph.</desc>
+  <rect width="1000" height="560" fill="#f8fafc"/>
+  <text x="500" y="70" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#142334">GM100 split-probe interface</text>
+  <text x="500" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" fill="#526276">5 MHz · nominal 10 mm contact face · two separate coaxial leads</text>
+  <rect x="76" y="175" width="355" height="258" rx="60" fill="#233746" stroke="#101e29" stroke-width="6"/>
+  <rect x="103" y="202" width="300" height="204" rx="42" fill="#e5edf1"/>
+  <rect x="145" y="232" width="92" height="144" rx="18" fill="#e4a360" stroke="#ab6327" stroke-width="4"/>
+  <rect x="269" y="232" width="92" height="144" rx="18" fill="#6db6c2" stroke="#27838f" stroke-width="4"/>
+  <text x="191" y="317" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#4e3219">A</text>
+  <text x="315" y="317" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#164a55">B</text>
+  <path d="M 431 253 C 530 253 538 237 660 237" fill="none" stroke="#ab6327" stroke-width="8"/>
+  <path d="M 431 359 C 530 359 538 375 660 375" fill="none" stroke="#27838f" stroke-width="8"/>
+  <circle cx="675" cy="237" r="26" fill="#fff" stroke="#ab6327" stroke-width="7"/>
+  <circle cx="675" cy="375" r="26" fill="#fff" stroke="#27838f" stroke-width="7"/>
+  <circle cx="675" cy="237" r="7" fill="#ab6327"/>
+  <circle cx="675" cy="375" r="7" fill="#27838f"/>
+  <text x="724" y="246" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#142334">Lead A</text>
+  <text x="724" y="384" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#142334">Lead B</text>
+  <text x="500" y="500" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#974d24">TX/RX assignment must be verified on the actual probe or labeled gauge sockets.</text>
+</svg>

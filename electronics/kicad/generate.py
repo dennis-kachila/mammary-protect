@@ -16,8 +16,14 @@ LIB_ROOT = Path(r"C:\Program Files\KiCad\10.0\share\kicad\symbols")
 OUT = Path(__file__).resolve().parent
 
 
+_uid_counter = 0
+_uid_namespace = uuid.UUID('e2f609d4-9b1b-4b10-b6b5-6995509da983')
+
+
 def uid() -> str:
-    return str(uuid.uuid4())
+    global _uid_counter
+    _uid_counter += 1
+    return str(uuid.uuid5(_uid_namespace, str(_uid_counter)))
 
 
 def form_at(text: str, start: int) -> str:
@@ -214,6 +220,25 @@ def build_hub() -> Path:
     return s.save()
 
 
+def build_probe_interface() -> Path:
+    s = Sheet('probe-interface', 'Mammary Protect - GM100 split-probe connection map', 'A4')
+    coax = LibrarySymbol('Connector', 'Conn_Coaxial')
+    s.place(coax, 'J1', 'GM100_LEAD_A', 63.5, 71.12,
+            {'1': 'LEAD_A_CORE', '2': 'LEAD_A_SHIELD'})
+    s.place(coax, 'J2', 'GM100_LEAD_B', 63.5, 121.92,
+            {'1': 'LEAD_B_CORE', '2': 'LEAD_B_SHIELD'})
+    s.place(coax, 'J3', 'ELECTRONICS_PORT_A', 172.72, 71.12,
+            {'1': 'LEAD_A_CORE', '2': 'LEAD_A_SHIELD'})
+    s.place(coax, 'J4', 'ELECTRONICS_PORT_B', 172.72, 121.92,
+            {'1': 'LEAD_B_CORE', '2': 'LEAD_B_SHIELD'})
+    s.note('The GM100 probe has two separate coaxial leads, corresponding to transmit and receive.', 145, 35)
+    s.note('Lead A/B physical TX/RX identity is unknown from the supplied product photo.', 145, 45)
+    s.note('Identify the leads using marked gauge sockets or a verified probe datasheet before connection.', 145, 55)
+    s.note('This is an interface map only: no pulser, receiver protection, isolation or connector footprint.', 145, 150)
+    s.note('Do not energize the probe from this drawing; bench characterization and electrical review are needed.', 145, 160)
+    return s.save()
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--inspect', action='store_true')
@@ -223,3 +248,4 @@ if __name__ == '__main__':
     else:
         print(build_sensor_node())
         print(build_hub())
+        print(build_probe_interface())

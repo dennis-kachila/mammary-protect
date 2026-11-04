@@ -19,6 +19,7 @@ def nets(path: Path) -> dict[str, set[str]]:
 
 hub = nets(Path(__file__).with_name("temperature-hub.net"))
 node = nets(Path(__file__).with_name("temperature-node.net"))
+probe = nets(Path(__file__).with_name("probe-interface.net"))
 for slot in range(1, 19):
     bank = (slot - 1) // 6 + 1
     connector = f"J{slot + 1}"
@@ -31,4 +32,7 @@ for line in ("SDA", "SCL"):
     assert {"J1", "U1"}.issubset(node[f"/{line}"])
 assert {"J1", "U1", "C1"}.issubset(node["/3V3"])
 assert {"J1", "U1", "C1"}.issubset(node["/GND"])
-print("Verified 18 isolated SDA/SCL branches, host buses, and node power connections")
+for lead, refs in (("A", {"J1", "J3"}), ("B", {"J2", "J4"})):
+    for conductor in ("CORE", "SHIELD"):
+        assert probe[f"/LEAD_{lead}_{conductor}"] == refs
+print("Verified 18 isolated sensor branches, host buses, node power, and both probe coax paths")

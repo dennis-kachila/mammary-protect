@@ -1,0 +1,235 @@
+(kicad_sch (version 20250114) (generator "eeschema") (uuid "a544d798-fb6f-5cd7-ab73-e01b938a0741") (paper "A4") (title_block (title "Mammary Protect - GM100 split-probe connection map") (rev "0.1") (comment 1 "Research prototype; electrical design requires review"))
+(lib_symbols
+(symbol "Connector:Conn_Coaxial"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0.254 3.048 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 2.921 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_Coaxial_0_1"
+			(polyline
+				(pts
+					(xy -2.54 0) (xy -0.508 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 1.778 0)
+				(mid 0.222 -1.8079)
+				(end -1.778 -0.508)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -1.778 0.508)
+				(mid 0.2221 1.8084)
+				(end 1.778 0)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 0)
+				(radius 0.508)
+				(stroke
+					(width 0.2032)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Conn_Coaxial_1_1"
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "In"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 2.54)
+				(name "Ext"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)
+(symbol (lib_id "Connector:Conn_Coaxial") (at 63.5 71.12 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "851e3545-b6ff-5a3e-82da-3d90ff5e7bca")
+(property "Reference" "J1" (at 71.12 66.04 0) (effects (font (size 1.27 1.27))))
+(property "Value" "GM100_LEAD_A" (at 71.12 68.58 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 63.5 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(instances (project "probe-interface" (path "/a544d798-fb6f-5cd7-ab73-e01b938a0741" (reference "J1") (unit 1))))
+)
+(wire (pts (xy 58.42 71.12) (xy 53.34 71.12)) (stroke (width 0) (type default)) (uuid "a628ff59-4f1f-5f7c-986f-1e9623332bc2"))
+(label "LEAD_A_CORE" (at 53.34 71.12 0) (effects (font (size 1.27 1.27))) (uuid "f4cd6d62-92cd-5ab2-a440-dde01f3695fa"))
+(wire (pts (xy 63.5 76.2) (xy 63.5 81.28)) (stroke (width 0) (type default)) (uuid "1cc3bb70-53e9-5541-93a3-ce496b01abb6"))
+(label "LEAD_A_SHIELD" (at 63.5 81.28 0) (effects (font (size 1.27 1.27))) (uuid "a37a2bc6-e471-5841-bb8a-03fa16d0b34d"))
+(symbol (lib_id "Connector:Conn_Coaxial") (at 63.5 121.92 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "06b61c26-0aff-59a9-b044-7d3f01b9679d")
+(property "Reference" "J2" (at 71.12 116.84 0) (effects (font (size 1.27 1.27))))
+(property "Value" "GM100_LEAD_B" (at 71.12 119.38 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 63.5 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(instances (project "probe-interface" (path "/a544d798-fb6f-5cd7-ab73-e01b938a0741" (reference "J2") (unit 1))))
+)
+(wire (pts (xy 58.42 121.92) (xy 53.34 121.92)) (stroke (width 0) (type default)) (uuid "f2303a88-4678-5fbd-b3de-24a28b32d1f3"))
+(label "LEAD_B_CORE" (at 53.34 121.92 0) (effects (font (size 1.27 1.27))) (uuid "6d86219b-e2dd-52ad-b12d-7d874715f2f1"))
+(wire (pts (xy 63.5 127) (xy 63.5 132.08)) (stroke (width 0) (type default)) (uuid "7c081a37-9f67-5d99-abe0-424dcd9b1483"))
+(label "LEAD_B_SHIELD" (at 63.5 132.08 0) (effects (font (size 1.27 1.27))) (uuid "ee390055-391c-5247-8577-9ef64e885d39"))
+(symbol (lib_id "Connector:Conn_Coaxial") (at 172.72 71.12 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "7fd964d9-cac0-5db6-97f2-4b3ebe233e5e")
+(property "Reference" "J3" (at 180.34 66.04 0) (effects (font (size 1.27 1.27))))
+(property "Value" "ELECTRONICS_PORT_A" (at 180.34 68.58 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 172.72 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(instances (project "probe-interface" (path "/a544d798-fb6f-5cd7-ab73-e01b938a0741" (reference "J3") (unit 1))))
+)
+(wire (pts (xy 167.64 71.12) (xy 162.56 71.12)) (stroke (width 0) (type default)) (uuid "635a39c0-3183-52c9-b8e7-e9bfdb23a1f5"))
+(label "LEAD_A_CORE" (at 162.56 71.12 0) (effects (font (size 1.27 1.27))) (uuid "c6463794-da15-5672-a218-ec6bc9e31e85"))
+(wire (pts (xy 172.72 76.2) (xy 172.72 81.28)) (stroke (width 0) (type default)) (uuid "a1a50e55-9e04-5d11-b8dd-f1cc06e66093"))
+(label "LEAD_A_SHIELD" (at 172.72 81.28 0) (effects (font (size 1.27 1.27))) (uuid "6aed21df-5383-57b6-b4b2-12b942b58c7b"))
+(symbol (lib_id "Connector:Conn_Coaxial") (at 172.72 121.92 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "a01873ec-e9c7-5dc3-b95a-4a759476915d")
+(property "Reference" "J4" (at 180.34 116.84 0) (effects (font (size 1.27 1.27))))
+(property "Value" "ELECTRONICS_PORT_B" (at 180.34 119.38 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 172.72 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(instances (project "probe-interface" (path "/a544d798-fb6f-5cd7-ab73-e01b938a0741" (reference "J4") (unit 1))))
+)
+(wire (pts (xy 167.64 121.92) (xy 162.56 121.92)) (stroke (width 0) (type default)) (uuid "4371734d-b1dc-5c65-91c1-cb7b6bdafbbe"))
+(label "LEAD_B_CORE" (at 162.56 121.92 0) (effects (font (size 1.27 1.27))) (uuid "253a8afa-356b-5975-abfd-36520ca8e4a0"))
+(wire (pts (xy 172.72 127) (xy 172.72 132.08)) (stroke (width 0) (type default)) (uuid "c4aa4d54-04bb-547c-8520-6a84963e3972"))
+(label "LEAD_B_SHIELD" (at 172.72 132.08 0) (effects (font (size 1.27 1.27))) (uuid "f84e4668-bca0-5633-a3ee-f8d1cc5d0896"))
+(text "The GM100 probe has two separate coaxial leads, corresponding to transmit and receive." (at 145 35 0) (effects (font (size 1.27 1.27))) (uuid "5cd802c8-de09-555b-8a44-b21b23e2471d"))
+(text "Lead A/B physical TX/RX identity is unknown from the supplied product photo." (at 145 45 0) (effects (font (size 1.27 1.27))) (uuid "34f2b463-2a6a-5eb7-9d67-46bdd43b00e2"))
+(text "Identify the leads using marked gauge sockets or a verified probe datasheet before connection." (at 145 55 0) (effects (font (size 1.27 1.27))) (uuid "a1c4b887-8e2a-58d6-9ed3-b8e4a8ce6c7d"))
+(text "This is an interface map only: no pulser, receiver protection, isolation or connector footprint." (at 145 150 0) (effects (font (size 1.27 1.27))) (uuid "f34b2f25-85e5-5b51-a6a9-269215c3f3fb"))
+(text "Do not energize the probe from this drawing; bench characterization and electrical review are needed." (at 145 160 0) (effects (font (size 1.27 1.27))) (uuid "54719e97-c884-5500-b179-20ca98baa36e"))
+)

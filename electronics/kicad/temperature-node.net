@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "D:\\Github_Projects\\mammary-protect\\electronics\\kicad\\temperature-node.kicad_sch")
-		(date "2026-11-04T23:07:57")
+		(date "2026-11-04T23:21:57")
 		(tool "Eeschema 10.0.8")
 		(sheet
 			(number "1")
@@ -93,7 +93,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "8191f102-f913-491c-a7ee-080fef8cd81d")
+			(tstamps "0c778ec2-95a4-5fcd-8bbc-532e7c12a7dc")
 			(units
 				(unit
 					(name "A")
@@ -147,7 +147,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "b8f67629-6bda-4a82-961c-ea645b0b3eb4")
+			(tstamps "405a67b6-930d-5311-a73d-25eca4829855")
 			(units
 				(unit
 					(name "A")
@@ -207,7 +207,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "a45773b3-de16-4bfa-a178-327a707bb605")
+			(tstamps "1b48d445-a5e7-5144-9af1-9572db9c8ff5")
 			(units
 				(unit
 					(name "A")
