@@ -1,6 +1,6 @@
 # Prototype materials planning
 
-A local draft bill of materials listed the following candidate items. It was a purchasing worksheet, not an assembled circuit or a verified procurement list. Quantities and supplier prices should be rechecked before ordering.
+A local draft bill of materials listed the following candidate items. The full [KES 30,000 source worksheet and CSV](procurement/README.md) contain all 23 lines, estimated costs, and historical supplier links. This abbreviated table was a purchasing worksheet, not an assembled circuit or a verified procurement list. Quantities and supplier prices should be rechecked before ordering.
 
 | Candidate item | Draft quantity |
 | --- | ---: |

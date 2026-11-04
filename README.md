@@ -19,6 +19,8 @@ The image above is a screenshot from an earlier CAD iteration; inspect the nativ
 
 The latest exported patch is [almost-final-patch-v16.f3d](cad/fusion/almost-final-patch-v16.f3d). Its associated STEP file is in the same folder. The probe holder is [probe-design-holder-v5.f3d](cad/fusion/probe-design-holder-v5.f3d). See the [CAD inventory](docs/cad-inventory.md) before treating any model as fabrication ready.
 
+An earlier [KES 30,000 draft materials worksheet](docs/procurement/README.md) is preserved with a searchable CSV. It covers only part of the present prototype; the electronics and ultrasound chain need a revised full BOM.
+
 ## Intended system
 
 The concept combines a wearable breast patch, a mechanically guided ultrasound probe, temperature sensing, acquisition electronics, and software for review of the recorded data. The planned probe holder uses two 3 mm diameter by 5 mm high magnets at 30.5 mm center spacing for docking to paired locations on the patch. This is a design target, not a verified final fit.
