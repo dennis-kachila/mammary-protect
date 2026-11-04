@@ -1,0 +1,9 @@
+# Local working and generated files
+*.bak
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+.pytest_cache/
+node_modules/

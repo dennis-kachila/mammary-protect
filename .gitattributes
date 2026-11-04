@@ -1,0 +1,7 @@
+*.f3d binary
+*.3mf binary
+*.stl binary
+*.png binary
+*.step -text
+*.scad text eol=lf
+*.md text eol=lf
