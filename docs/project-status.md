@@ -4,6 +4,8 @@
 
 This repository contains mechanical CAD, historical mesh exports, a parametric OpenSCAD concept, and visual concept art. The main patch and probe-holder Fusion files are editable and can be inspected directly. Separate public repositories contain related app/backend work maintained by another account.
 
+The CAD inventory names three additional Fusion cloud documents visible in the session that could not be exported during this release. This repository is therefore an organized publication of the available files, not an assertion that every cloud design or historical project file has been captured.
+
 ## Work still required
 
 1. Confirm patch dimensions, strap fit, probe travel, and magnet alignment with printed parts and the actual probe.

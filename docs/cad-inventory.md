@@ -9,6 +9,8 @@ All Fusion 360 exports below were taken from open saved documents on 2026-11-04.
 | `probe-design-holder-v5.f3d`, `.step` | Probe Design Holder v5 | Angled probe and holder development; dimensions and magnet interface still need physical verification |
 | `breast-holder-assembly-v3.f3d` | Breast Holder assembly v3 | Assembly archive; check references when opening |
 
+The same Fusion session also showed `Anatomic Breast 1 v9`, `raspi 4 box v1`, and `Assembly V1 v2`. These documents were not exported in this release: Fusion stopped responding during a STEP export of the breast holder assembly, and its MCP add-in did not reconnect after restart. The local `enclosure.stl` and `Body3.3mf` are included, but their exact correspondence to those cloud documents is unverified.
+
 Older mesh files in `cad/mesh/` were found in the local project folder and retained as historical iterations. Their exact relationship to the Fusion version history has not been established. In particular, a mesh filename is not evidence that it is the current design.
 
 The OpenSCAD file is a separate parametric exploration. Some comments and parameter names in that early concept are inconsistent (for example, a variable called `magnet_hole_radius` is described as a diameter). Verify all dimensions from the geometry before manufacture.
