@@ -2,7 +2,9 @@
 
 Mammary Protect is an early-stage wearable breast-monitoring research project. This repository shares the mechanical design work, concept images, and the current system architecture for funding and technical review. The Fusion 360 archives are the editable design sources; STEP and mesh files support viewing and fabrication experiments.
 
-![Concept rendering of the patch and straps](images/patch-with-sensor-mounts-concept.png)
+![Fusion 360 patch design iteration](images/patch-cad-iteration.png)
+
+The image above is a screenshot from an earlier CAD iteration; inspect the native archive for the latest geometry.
 
 ## What is here
 
@@ -11,9 +13,9 @@ Mammary Protect is an early-stage wearable breast-monitoring research project. T
 | [Fusion 360 CAD](cad/fusion/) | Patch, probe holder, and breast holder assembly archives; STEP exports where available | Prototype designs |
 | [Meshes](cad/mesh/) | Earlier STL and 3MF patch and enclosure iterations | Historical prototypes |
 | [OpenSCAD](cad/openscad/) | Parametric honeycomb patch exploration | Early concept |
-| [Concept images](images/) | Visual studies of the patch and straps | Illustrations, not manufacturing drawings |
+| [Images](images/) | CAD iteration screenshots and visual studies of the patch and straps | Visual references, not manufacturing drawings |
 | [Electronics](electronics/README.md) | Proposed sensing and processing architecture | Planning stage; no verified schematic or PCB source yet |
-| [Design notes](docs/) | CAD inventory, probe dimensions, and project status | Working notes |
+| [Design notes](docs/) | CAD inventory, probe dimensions, prototype materials, and project status | Working notes |
 
 The latest exported patch is [almost-final-patch-v16.f3d](cad/fusion/almost-final-patch-v16.f3d). Its associated STEP file is in the same folder. The probe holder is [probe-design-holder-v5.f3d](cad/fusion/probe-design-holder-v5.f3d). See the [CAD inventory](docs/cad-inventory.md) before treating any model as fabrication ready.
 
@@ -25,7 +27,7 @@ The work is at prototype stage. The present files do **not** establish diagnosti
 
 ## Related software
 
-Team software appears in separate public repositories maintained by another account: [Mammary Protect app and backend](https://github.com/kikwasteve23/mammary-protect) and [Mammary Protect application](https://github.com/kikwasteve23/Mammary_Protect_Application). Those repositories are linked for context and are not mirrored here. Their ownership, implementation status, and rights should be reviewed with the maintainers.
+Related public software appears in separate repositories maintained by another account: [Mammary Protect app and backend](https://github.com/kikwasteve23/mammary-protect) and [Mammary Protect application](https://github.com/kikwasteve23/Mammary_Protect_Application). Those repositories are linked for context and are not mirrored here. Their relationship to this design, implementation status, and rights should be confirmed with the maintainers.
 
 ## Reuse and provenance
 

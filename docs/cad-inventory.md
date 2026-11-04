@@ -13,6 +13,8 @@ Older mesh files in `cad/mesh/` were found in the local project folder and retai
 
 The OpenSCAD file is a separate parametric exploration. Some comments and parameter names in that early concept are inconsistent (for example, a variable called `magnet_hole_radius` is described as a diameter). Verify all dimensions from the geometry before manufacture.
 
+`images/patch-cad-iteration.png` and `images/probe-cad-iteration.png` are screenshots supplied during the design review. They show intermediate geometry and should not be used as a dimensional reference for the latest Fusion files.
+
 ## Mechanical decisions under review
 
 - Two-magnet probe docking target: 30.5 mm center to center; magnets 3 mm diameter, 5 mm high.
